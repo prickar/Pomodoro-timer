@@ -44,7 +44,7 @@ const Settings: React.FC<SettingsProps> = ({ onSave }) => {
 
     return (
         <>
-        <form className="text-darkDarkPurple">
+        <form className="text-darkDarkPurple mx-auto mt-4">
             <div>
                 <label htmlFor="workDuration">Work duration (minutes):</label>
                 <input

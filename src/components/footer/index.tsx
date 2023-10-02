@@ -1,7 +1,7 @@
 const Footer =() => {
     return ( 
         <div>
-            <p className='text-xs ml-4 text-darkDarkPurple'>Sound from Zapsplat.com</p>
+            <p className='text-xs ml-4 text-darkDarkPurple font-light'>Sound from Zapsplat.com</p>
 
         </div>
     )

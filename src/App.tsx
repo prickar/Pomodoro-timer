@@ -26,16 +26,19 @@ function App () {
 
   return (
     
-    <div className='flex flex-col space-y-10 bg-lightBeige'>
+    <div className='flex flex-col min-h-screen  bg-lightBeige font-roboto'>
     <Header />
+    <div className='mt-4'>
     <Timer 
     workDuration={timerSettings.workDuration} 
     breakDuration={timerSettings.breakDuration} 
      />
+     </div>
     <button className='text-darkDarkPurple' onClick={() => setShowSettings(!showSettings)}>
       {showSettings ? 'Hide settings' : 'Show settings'}
     </button>
     {showSettings && <Settings onSave={handleSaveSettings} />} 
+    <div className='flex-grow' /> 
     <Footer />
     </div>
   

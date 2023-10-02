@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-
+    fontFamily: {
+      roboto:[ "Roboto Condensed", "sans-serif"]
+    },
     extend: {
       colors: {
         lightBeige: "#f4eee0",
