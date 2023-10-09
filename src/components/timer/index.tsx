@@ -8,7 +8,7 @@ interface TimerProps {
   breakDuration: number;
 }
 
-const Timer: React.FC<TimerProps> = ({ workDuration, breakDuration }) => {
+const Timer = ({ workDuration, breakDuration }: TimerProps) => {
   const [phase, setPhase] = useState<"work" | "break">("work");
   const [timerRunning, setTimerRunning] = useState<boolean>(false);
   const [remainingTime, setRemainingTime] = useState<number>(workDuration * 60);

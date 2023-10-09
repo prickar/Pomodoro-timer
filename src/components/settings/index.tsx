@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export interface AppSettings {
   workDuration: number;
@@ -18,7 +18,7 @@ const Settings: React.FC<SettingsProps> = ({ onSave }) => {
   });
 
   const handleWorkDurationChange = (
-    event: React.ChangeEvent<HTMLInputElement>,
+    event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const newValue = event.target.value;
     const newWorkDuration = newValue ? parseInt(newValue, 10) : 0;
@@ -26,7 +26,7 @@ const Settings: React.FC<SettingsProps> = ({ onSave }) => {
   };
 
   const handleBreakDurationChange = (
-    event: React.ChangeEvent<HTMLInputElement>,
+    event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const newValue = event.target.value;
     const newBreakDuration = newValue ? parseInt(newValue, 10) : 0;
@@ -59,7 +59,7 @@ const Settings: React.FC<SettingsProps> = ({ onSave }) => {
           />
         </div>
         <div>
-          <label htmlFor="breakDuration">Break duration(minutes):</label>
+          <label htmlFor="breakDuration">Break duration (minutes):</label>
           <input
             type="number"
             id="breakDuration"

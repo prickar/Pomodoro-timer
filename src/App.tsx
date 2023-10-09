@@ -1,11 +1,11 @@
 // import { useState } from 'react'
 import { useState } from "react";
 import "./App.css";
-import Header from "./components/header/index";
-import Settings from "./components/settings/index";
+import Header from "./components/Header/index";
+import Settings from "./components/Settings/index";
 import Timer from "./components/timer/index";
-import Footer from "./components/footer";
-import { AppSettings } from "./components/settings/index";
+import Footer from "./components/Footer";
+import { AppSettings } from "./components/Settings/index";
 
 const defaultSettings: AppSettings = {
   workDuration: 25,
