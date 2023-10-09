@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/index";
 import Settings from "./components/Settings/index";
-import Timer from "./components/timer/index";
+import Timer from "./components/Timer/index";
 import Footer from "./components/Footer";
 import { AppSettings } from "./components/Settings/index";
 
